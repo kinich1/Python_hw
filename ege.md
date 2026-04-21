@@ -147,5 +147,46 @@ for x in range(0, 2):
 
 **Ответ: wzyx**
 
-# Задание 78064
+# Задание 78064 (Тип 8)
 <img width="774" height="185" alt="image" src="https://github.com/user-attachments/assets/afb1be42-a412-423f-8bd6-4eab8c5693c2" />
+
+**Решение:**
+~~~
+from itertools import product
+# 1. Задаём алфавит в нужном порядке (как в условии)
+alphabet = sorted('КРОВАТЬ')   # буквы: А, В, К, О, Р, Т, Ь
+# Переменная для хранения номера последнего подходящего слова с нечётным номером
+last_odd_number = None
+# 2. Генерируем все 5-буквенные слова
+#    product перебирает все комбинации в алфавитном порядке
+for number, letters in enumerate(product(alphabet, repeat=5), start=1):
+    word = ''.join(letters)   # собираем строку из кортежа букв
+    # 3. Проверяем условия для слова
+    if word.count('Т') <= 1:                      # не более одной буквы Т
+        if word.count('В') == 2:                  # ровно две буквы В
+            if 'ЬЬ' not in word:                  # нет двух Ь рядом
+                # 4. Если номер нечётный, запоминаем его
+                if number % 2 != 0:
+                    last_odd_number = number
+# 5. Выводим ответ
+print("Номер последнего подходящего слова с нечётным номером:", last_odd_number)
+~~~
+**Ответ: 16277**
+
+# Задание 3570 (Тип 8)
+<img width="634" height="138" alt="image" src="https://github.com/user-attachments/assets/b6bb112d-8bda-43fe-b164-df8eb5b06ef3" />
+
+**Решение:**
+~~~
+a = {0: "Л", 1: "Н", 2: "О", 3: "С"}
+x = 0
+for i in range(0, len(a)):
+    for j in range(0, len(a)):
+        for k in range(0, len(a)):
+            for l in range(0, len(a)):
+                x += 1
+                if x == 250:
+                    print(a[i], a[j], a[k], a[l])
+~~~
+
+**Ответ: ССОН**
