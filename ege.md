@@ -257,3 +257,52 @@ print(x)
 
 **Ответ: 48**
 
+# Задание 19051 (Тип 2)
+<img width="771" height="188" alt="image" src="https://github.com/user-attachments/assets/fcb37398-283e-43c8-9899-05204ae04bb5" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x and not y) or (x == z) or not w):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: xwzy**
+
+# Задание 28685
+<img width="773" height="57" alt="image" src="https://github.com/user-attachments/assets/c71462e4-785d-4d68-80b5-116000d823f0" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'ПЕТЯ'
+x = 0
+for word in product(word, repeat = 6):
+    arl = ''.join(word)
+    if arl.count('ЕЕ') == 0 and arl.count('ЕЯ') == 0 and arl.count('ЯЯ') == 0 and arl.count('ЯЕ') == 0 and arl.count('ПП') == 0 and arl.count('ПТ') == 0 and arl.count('ТТ') == 0 and arl.count('ТП') == 0:
+        x += 1
+print(x)
+~~~
+
+**Ответ: 128**
+
+# Задание 55589 (Тип 2)
+<img width="763" height="227" alt="image" src="https://github.com/user-attachments/assets/e1555e93-9770-4d99-a073-00447a093aa3" />
+
+**Решение:**
+~~~
+print('x y z w f1 f2')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                f1 = (x <= y) == (w or not z)
+                f2 = (x <= y) and (not w == z)
+                print(x, y, z, w, int(f1), int(f2))
+~~~
+
+**Ответ: xzyw**
