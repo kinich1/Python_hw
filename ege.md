@@ -223,3 +223,20 @@ print(x)
 ~~~
 
 **Ответ: 405**
+
+# Задание 16431 (Тип 2)
+<img width="732" height="202" alt="image" src="https://github.com/user-attachments/assets/62b0a0b9-bf09-43b4-a6a0-8284268a86d0" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((y <= x) == (x <= w) and (z or x)):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: ywxz**
+
