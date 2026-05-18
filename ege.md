@@ -240,3 +240,20 @@ for x in range(0, 2):
 
 **Ответ: ywxz**
 
+# Задание 18491 (Тип 8)
+<img width="769" height="36" alt="image" src="https://github.com/user-attachments/assets/a3d3fe29-af9c-413e-a0ea-50b36596e984" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'ОЛЬГА'
+x = 0
+for word in product(word, repeat = 5):
+    arl = ''.join(word)
+    if arl[0] != 'Ь' and arl.count('О') == 1 and word.count('Л') == 1 and arl.count('Ь') == 1 and arl.count('Г') == 1 and arl.count('А') == 1 and arl.count('ОЬ') == 0 and arl.count('АЬ') == 0:
+        x += 1
+print(x)
+~~~
+
+**Ответ: 48**
+
