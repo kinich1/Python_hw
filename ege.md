@@ -190,3 +190,36 @@ for i in range(0, len(a)):
 ~~~
 
 **Ответ: ССОН**
+
+# Задание 35460 (Тип 2)
+<img width="781" height="204" alt="image" src="https://github.com/user-attachments/assets/f1ec949d-c9e1-4d89-8d51-e953ce92e46c" />
+
+**Решение:**
+~~~
+print('x y z w')
+k = 0
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if (not ((x or y) <= (z and w)) and (x <= w)):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: zxyw**
+# Задание 8098 (Тип 8)
+<img width="781" height="63" alt="image" src="https://github.com/user-attachments/assets/41a0cf8b-ee94-4b72-a0f5-d3d53d6c9092" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'СЛОН'
+x = 0
+for word in product(word, repeat = 5):
+    arl = ''.join(word)
+    if arl.count('С') == 1:
+        x += 1
+print(x)
+~~~
+
+**Ответ: 405**
