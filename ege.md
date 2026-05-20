@@ -408,3 +408,55 @@ for x in range(0, 2):
 **Ответ: wxyz**
 
 # Задание 10473 (Тип 8)
+<img width="768" height="62" alt="image" src="https://github.com/user-attachments/assets/9f02e3e0-2aa6-4364-9dcc-10354cf2ed90" />
+
+**Решение:**
+~~~
+from itertools import product
+num = '1234'
+x = 0
+for num in product(num, repeat=5):
+    code = ''.join(num)
+    if code.count('1') == 2:
+        x += 1
+print(x)
+~~~
+
+**Ответ: 270**
+
+# Задание 18578 (Тип 2)
+<img width="718" height="201" alt="image" src="https://github.com/user-attachments/assets/449c7aa0-1e1b-457e-9658-67fdba5fe9fb" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if (((x and not y) or (w <= z)) == (z == x)):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: zywx**
+
+# Задание 56508 (Тип 8)
+<img width="770" height="34" alt="image" src="https://github.com/user-attachments/assets/6db217ac-e55e-4602-9705-8e9908fe45f4" />
+
+**Решение:**
+~~~
+from itertools import product
+s = product('НЧ', repeat = 11)
+c1 = 0
+c2 = 0
+for i in s:
+    p=''.join(i)
+    if p.count('НН') == 0 and p.count('Н') == 3:
+        if p[0] == 'Н':
+            c1 += 1
+        else:
+            c2 += 1
+print(4**11*c1 + 3*4**10*c2)
+~~~
+
+**Ответ: 293601280**
