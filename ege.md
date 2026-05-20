@@ -306,3 +306,37 @@ for x in range(0, 2):
 ~~~
 
 **Ответ: xzyw**
+
+# Задание 16886 (Тип 8)
+<img width="772" height="54" alt="image" src="https://github.com/user-attachments/assets/3e62dbb5-b6e3-40a7-9f77-66e58cb6c196" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'МАТВЕЙ'
+x = 0
+for word in product(word, repeat=6):
+    newword = ''.join(word)
+    if newword[0] != 'Й' and newword.count('АЕ') == 0 and newword.count('М') == 1 and newword.count('А') == 1 and newword.count('Т') == 1 and newword.count('В') == 1 and newword.count('Е') == 1 and newword.count('Й') == 1:
+        x += 1
+print(x)
+~~~
+
+**Ответ: 504**
+
+# Задание 51971 (Тип 2)
+<img width="744" height="237" alt="image" src="https://github.com/user-attachments/assets/f9802200-8af9-4b51-be5f-4bcc67562c4e" />
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x == (not y)) <= ((z <= (not w)) and (w <= y))):
+                    print(x, y, z, w )
+~~~
+
+**Ответ: ywzx**
+
+# Задание 
