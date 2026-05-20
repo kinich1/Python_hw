@@ -326,6 +326,7 @@ print(x)
 
 # Задание 51971 (Тип 2)
 <img width="744" height="237" alt="image" src="https://github.com/user-attachments/assets/f9802200-8af9-4b51-be5f-4bcc67562c4e" />
+
 **Решение:**
 ~~~
 print('x y z w')
@@ -375,6 +376,7 @@ for x in range(0, 2):
 
 # Задание 59801 (Тип 8)
 <img width="776" height="83" alt="image" src="https://github.com/user-attachments/assets/2dc12d0b-817c-47dc-b8d0-f7bafb81fa58" />
+
 **Решение:**
 ~~~
 from itertools import product
@@ -389,3 +391,20 @@ print(x)
 
 **Ответ: 1944**
 
+# Задание 85715 (Тип 2)
+<img width="781" height="214" alt="image" src="https://github.com/user-attachments/assets/d6b543b8-0554-4ab8-b2be-62d0529624eb" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((not x) or ((w <= y) <= z)):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: wxyz**
+
+# Задание 10473 (Тип 8)
