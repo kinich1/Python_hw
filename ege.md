@@ -339,4 +339,53 @@ for x in range(0, 2):
 
 **Ответ: ywzx**
 
-# Задание 
+# Задание 78033 (Тип 8)
+<img width="764" height="190" alt="image" src="https://github.com/user-attachments/assets/1f4ecb4f-b8b8-4857-b38d-7cc87485ce23" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'БЛРСУЬЭ'
+x = 0
+for word in product(word, repeat=5):
+    newword = ''.join(word)
+    x += 1
+    all = str(x) + ". " + newword
+    if x % 2 == 0 and newword.count('С') >= 2 and newword.count('Л') == 1 and newword.count('ЭЭ') == 0 and newword.count('ЭЭЭ') == 0:
+        print(all)
+~~~
+
+**Ответ: 15948**
+
+# Задание 27371 (Тип 2)
+<img width="772" height="172" alt="image" src="https://github.com/user-attachments/assets/c21cdff4-0609-4b6d-8d90-5e093c0a3db8" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((x and (not y)) <= ((not z) or (not w)) and ((w <= x) or y))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: zywx**
+
+# Задание 59801 (Тип 8)
+<img width="776" height="83" alt="image" src="https://github.com/user-attachments/assets/2dc12d0b-817c-47dc-b8d0-f7bafb81fa58" />
+**Решение:**
+~~~
+from itertools import product
+word = 'КОНФЕТА'
+x = 0
+for word in product(word, repeat=5):
+    newword = ''.join(word)
+    if newword.count('Е') == 2 and newword[1] != 'Ф':
+        x += 1
+print(x)
+~~~
+
+**Ответ: 1944**
+
