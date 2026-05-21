@@ -460,3 +460,84 @@ print(4**11*c1 + 3*4**10*c2)
 ~~~
 
 **Ответ: 293601280**
+
+# Задание 81786 (Тип 2)
+<img width="776" height="221" alt="image" src="https://github.com/user-attachments/assets/3ef8cf5b-4aa7-40f2-8e1c-c5d5651c3ead" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((x or y) and not (y == z) and (not w)):
+                    print(x, y, z, w)
+~~~
+**Ответ: zyxw**
+
+# Задание 10384 (Тип 8)
+<img width="773" height="70" alt="image" src="https://github.com/user-attachments/assets/39e24cc1-78bd-4226-9832-1f43cbc60872" />
+
+**Решение:**
+~~~
+from itertools import product
+x = 0
+words = 'ABCDX'
+for words in product(words, repeat=4):
+    code = ''.join(words)
+    if (code[0] == 'X' and code.count('X') == 1) or code.count('X') == 0:
+        x += 1
+        print(code)
+print(x)
+~~~
+
+**Ответ: 320**
+
+# Задание 18483 (Тип 2)
+<img width="713" height="194" alt="image" src="https://github.com/user-attachments/assets/0bc9936a-422d-4620-8d54-7b1f2319308d" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((y <= w) == (x <= (not z)) and (x or w))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: yzwx**
+
+# Задание 3233 (Тип 8)
+<img width="731" height="139" alt="image" src="https://github.com/user-attachments/assets/0ac170d8-fe49-4d5b-a8d9-48a53c9d64f0" />
+
+**Решение:**
+~~~
+from itertools import product
+words = 'АКРУ'
+x = 0
+for words in product(words, repeat=5):
+    word = "".join(words)
+    x += 1
+    print(str(x) + '. ' + str(word))
+~~~
+
+**Ответ: АУУРК**
+
+# Задание 33747 (Тип 2)
+<img width="768" height="205" alt="image" src="https://github.com/user-attachments/assets/c5fcc953-9f93-4b9f-ae80-192b95c643c4" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((not (z == w)) <= (w and (not x)) or (x and (not y)))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: wzyx**
