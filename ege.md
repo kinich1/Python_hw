@@ -593,3 +593,34 @@ for word in product(word, repeat = 4):
 **Ответ: 86**
 
 ## Задание 73828 (Тип 2)
+<img width="703" height="192" alt="image" src="https://github.com/user-attachments/assets/53581bf9-cf6d-4a28-a01c-06e0367ca08d" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((x == (y <= z)) and (y == (not (z <= w)))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: wzxy**
+
+## Задание 3697 (Тип 8)
+<img width="773" height="159" alt="image" src="https://github.com/user-attachments/assets/57661332-8fec-45f2-b578-30989901d54d" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'ВИНТ'
+x = 0
+for word in product(word, repeat=5):
+    x += 1
+    word2 = str(x) + '. ' + ''.join(word)
+    if x == 1019:
+        print(word2)
+~~~
+
+**Ответ: ТТТНН**
