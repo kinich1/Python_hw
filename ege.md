@@ -541,3 +541,55 @@ for x in range(0, 2):
 ~~~
 
 **Ответ: wzyx**
+
+## Задание 27009 (Тип 8)
+<img width="772" height="49" alt="image" src="https://github.com/user-attachments/assets/f4c99b94-bd12-457a-a4cc-f7c86fb03e4e" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'НИКОЛАЙ'
+x = 0
+for word in product(word, repeat=4):
+    word2 = ''.join(word)
+    if word2[0] != 'Й' and (word2.count('И') >= 1 or word2.count('О') >= 1 or word2.count('А') >= 1):
+        x += 1
+print(x)
+~~~
+
+**Ответ: 1866**
+
+## Задание 40718 (Тип 2)
+<img width="774" height="202" alt="image" src="https://github.com/user-attachments/assets/287a26e9-f9b5-4b9f-9387-28441d51aa41" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((x <= y) and (z or w)) <= ((x == w) or (y and (not z)))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: yxwz**
+
+## Задание 15822 (Тип 8)
+<img width="770" height="158" alt="image" src="https://github.com/user-attachments/assets/535e8025-5b78-4fcb-8c70-3bf502aaa6fa" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'АЕКР'
+x = 0
+for word in product(word, repeat = 4):
+    x += 1
+    word2 = str(x) + '.' + ''.join(word)
+    if word2.count('А') == 0:
+        print(word2)
+~~~
+
+**Ответ: 86**
+
+## Задание 73828 (Тип 2)
