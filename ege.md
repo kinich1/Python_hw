@@ -624,3 +624,175 @@ for word in product(word, repeat=5):
 ~~~
 
 **Ответ: ТТТНН**
+
+## Задание 28546 (Тип 8)
+<img width="722" height="48" alt="image" src="https://github.com/user-attachments/assets/8daa8323-0d84-44bb-9dc1-26ff212be6d1" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'НАСТЯ'
+count = 0
+for word in product(word, repeat=4):
+    word2 = ''.join(word)
+    if word2.count('Н') <= 1 and word2.count('А') <= 1 and word2.count('С') <= 1 and word2.count('Т') <= 1 and word2.count('Я') <= 1 and word2.count('АЯ') == 0 and word2.count('ЯА') == 0 and word2.count('НС') == 0 and word2.count('НТ') == 0 and word2.count('СН') == 0 and word2.count('СТ') == 0 and word2.count('ТН') == 0 and word2.count('ТС') == 0:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 24**
+
+## Задание 45236 (Тип 2)
+<img width="721" height="222" alt="image" src="https://github.com/user-attachments/assets/47fe36cc-4ad2-4f29-9c5b-1c224e91931c" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (not (x <= w) or (y == z) or y):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: zxwy**
+
+## Задание 15795 (Тип 8)
+<img width="719" height="169" alt="image" src="https://github.com/user-attachments/assets/1622b188-7baf-48e2-ba3f-ecf75b1696f1" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'АПРСУ'
+count = 0
+for word in product(word, repeat = 4):
+    word2 = ''.join(word)
+    count += 1
+    var = str(count) + '. ' + word2
+    if var.count('А') == 0:
+        print(var)
+        break
+~~~
+
+**Ответ: 157**
+
+## Задание 33504 (Тип )
+<img width="726" height="206" alt="image" src="https://github.com/user-attachments/assets/486ca093-d4c9-4942-b793-d3954e9e6d3c" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((x == (not y)) <= (y and (not z)) or (z and (not w)))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: wzyx**
+
+## Задание 3700 (Тип 8)
+<img width="719" height="157" alt="image" src="https://github.com/user-attachments/assets/61e7762d-ae77-4084-8319-ebfa199ffd2d" />
+
+**Решение:**
+~~~
+from itertools import product
+word = 'БКФЦ'
+count = 0
+for word in product(word, repeat = 5):
+    word2 = ''.join(word)
+    count += 1
+    code = str(count) + '. ' + word2
+    if count == 486:
+        print(code)
+~~~
+
+**Ответ: КЦФКК**
+
+## Задание 64932 (Тип 2)
+<img width="725" height="214" alt="image" src="https://github.com/user-attachments/assets/a2be9690-b4ea-4464-8eb7-cc39b6d5ae47" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((x == z) <= ((not y) or w)) == (not ((w <= z) or (x <= y))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: zyxw**
+
+## Задание 3237 (Тип 8)
+<img width="699" height="124" alt="image" src="https://github.com/user-attachments/assets/734066aa-6abe-4987-b9e0-23fc8d46b3d6" />
+
+**Решение:**
+~~~
+from itertools import product
+words = 'АОУ'
+count = 0
+for words in product(words, repeat=5):
+    word = ''.join(words)
+    count += 1
+    code = str(count) + '. ' + word
+    if count == 170:
+        print(code)
+        break
+~~~
+
+**Ответ: УААУО**
+
+## Задание 64887 (Тип 2)
+<img width="724" height="206" alt="image" src="https://github.com/user-attachments/assets/efd03256-f484-4016-a9b0-8b37c7961668" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((x == y) <= ((not z) or w)) == (not ((w <= x) or (y <= z))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: wzyx**
+
+## Задание 13486 (Тип 8)
+<img width="716" height="82" alt="image" src="https://github.com/user-attachments/assets/4dc9f749-deb0-4797-80b6-f95e8914193e" />
+
+**Решение:**
+~~~
+from itertools import product
+words = 'АВСХ'
+count = 0
+for words in product(words, repeat=5):
+    code = ''.join(words)
+    if (code[0] == 'Х' or code[4] == 'Х') and code.count('Х') == 1:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 162**
+
+## Задание  (Тип )
+
+**Решение:**
+~~~
+
+~~~
+
+**Ответ: **
+
+## Задание  (Тип )
+
+**Решение:**
+~~~
+
+~~~
+
+**Ответ: **
