@@ -779,11 +779,18 @@ print(count)
 
 **Ответ: 162**
 
-## Задание  (Тип )
+## Задание 72587 (Тип 2)
+<img width="721" height="220" alt="image" src="https://github.com/user-attachments/assets/936c7617-a765-4192-984a-7910d859d84b" />
 
 **Решение:**
 ~~~
-
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x <= (z <= w)) and (z <= (y == (not w)))):
+                    print(x, y, z, w)
 ~~~
 
 **Ответ: **
