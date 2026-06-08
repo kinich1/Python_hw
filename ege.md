@@ -805,7 +805,11 @@ count = 0
 ch = '01234567'
 for ch in product(ch, repeat=5):
     ch2 = ''.join(ch)
-    if ch2[0] != '0' and ch2.count('1') == 0 and len(ch2) == 5 and ch2.count('00') == 0 and ch2.count('02') == 0 and ch2.count('04') == 0 and ch2.count('06') == 0 and ch2.count('20') == 0 and ch2.count('22') == 0 and ch2.count('24') == 0 and ch2.count('26') == 0  and ch2.count('40') == 0 and ch2.count('42') == 0 and ch2.count('44') == 0 and ch2.count('46') == 0 and ch2.count('60') == 0 and ch2.count('62') == 0 and ch2.count('64') == 0 and ch2.count('66') == 0 and ch2.count('11') == 0 and ch2.count('13') == 0 and ch2.count('15') == 0 and ch2.count('17') == 0 and ch2.count('31') == 0 and ch2.count('33') == 0 and ch2.count('35') == 0 and ch2.count('37') == 0 and ch2.count('51') == 0 and ch2.count('53') == 0 and ch2.count('55') == 0 and ch2.count('57') == 0 and ch2.count('71') == 0 and ch2.count('73') == 0 and ch2.count('75') == 0 and ch2.count('77') == 0 and ch2.count('0') <= 1 and ch2.count('2') <= 1 and ch2.count('3') <= 1 and ch2.count('4') <= 1 and ch2.count('5') <= 1 and ch2.count('6') <= 1 and ch2.count('7') <= 1:
+    if ch2[0] != '0' and ch2.count('1') == 0 and len(ch2) == 5 and ch2.count('00') == 0 and ch2.count('02') == 0 and ch2.count('04') == 0 and ch2.count('06') == 0 and ch2.count('20') == 0 and ch2.count('22') == 0 \ 
+            and ch2.count('24') == 0 and ch2.count('26') == 0  and ch2.count('40') == 0 and ch2.count('42') == 0 and ch2.count('44') == 0 and ch2.count('46') == 0 and ch2.count('60') == 0 and ch2.count('62') == 0 and ch2.count('64') == 0 and ch2.count('66') == 0 \ 
+            and ch2.count('11') == 0 and ch2.count('13') == 0 and ch2.count('15') == 0 and ch2.count('17') == 0 and ch2.count('31') == 0 and ch2.count('33') == 0 and ch2.count('35') == 0 and ch2.count('37') == 0 \ 
+            and ch2.count('51') == 0 and ch2.count('53') == 0 and ch2.count('55') == 0 and ch2.count('57') == 0 and ch2.count('71') == 0 and ch2.count('73') == 0 and ch2.count('75') == 0 and ch2.count('77') == 0 and ch2.count('0') <= 1 and ch2.count('2') <= 1 \
+            and ch2.count('3') <= 1 and ch2.count('4') <= 1 and ch2.count('5') <= 1 and ch2.count('6') <= 1 and ch2.count('7') <= 1:
         count += 1
 print(count)
 ~~~
