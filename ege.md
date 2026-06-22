@@ -278,15 +278,6 @@ print(count)
 
 **Ответ: 1440**
 
-# Задание (Тип) 
-
-**Решение:**
-~~~
-
-~~~
-
-**Ответ: **
-
 # Задание 3570 (Тип 8, нет в заданиях)
 <img width="634" height="138" alt="image" src="https://github.com/user-attachments/assets/b6bb112d-8bda-43fe-b164-df8eb5b06ef3" />
 
@@ -354,6 +345,23 @@ for x in range(0, 2):
 
 **Ответ: ywxz**
 
+# Задание 55589 (Тип 2) Исмаилов
+<img width="763" height="227" alt="image" src="https://github.com/user-attachments/assets/e1555e93-9770-4d99-a073-00447a093aa3" />
+
+**Решение:**
+~~~
+print('x y z w f1 f2')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                f1 = (x <= y) == (w or not z)
+                f2 = (x <= y) and (not w == z)
+                print(x, y, z, w, int(f1), int(f2))
+~~~
+
+**Ответ: xzyw**
+
 # Задание 18491 (Тип 8) Исмаилов
 <img width="769" height="36" alt="image" src="https://github.com/user-attachments/assets/a3d3fe29-af9c-413e-a0ea-50b36596e984" />
 
@@ -370,6 +378,24 @@ print(x)
 ~~~
 
 **Ответ: 48**
+
+# Задание 48423 (Тип 2) Сергеев
+<img width="721" height="238" alt="image" src="https://github.com/user-attachments/assets/af28acfa-07bf-49c0-87c9-de3b81bd23c0" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if ((x <= (y == w)) and (y == (w <= z))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: yxwz**
+
+# Задание 37143 (Тип 8) Сергеев
 
 # Задание 19051 (Тип 2, нет в заданиях)
 <img width="771" height="188" alt="image" src="https://github.com/user-attachments/assets/fcb37398-283e-43c8-9899-05204ae04bb5" />
@@ -403,23 +429,6 @@ print(x)
 ~~~
 
 **Ответ: 128**
-
-# Задание 55589 (Тип 2) Исмаилов
-<img width="763" height="227" alt="image" src="https://github.com/user-attachments/assets/e1555e93-9770-4d99-a073-00447a093aa3" />
-
-**Решение:**
-~~~
-print('x y z w f1 f2')
-for x in range(0, 2):
-    for y in range(0, 2):
-        for z in range(0, 2):
-            for w in range(0, 2):
-                f1 = (x <= y) == (w or not z)
-                f2 = (x <= y) and (not w == z)
-                print(x, y, z, w, int(f1), int(f2))
-~~~
-
-**Ответ: xzyw**
 
 # Задание 16886 (Тип 8, нет в заданиях)
 <img width="772" height="54" alt="image" src="https://github.com/user-attachments/assets/3e62dbb5-b6e3-40a7-9f77-66e58cb6c196" />
@@ -521,7 +530,7 @@ for x in range(0, 2):
 
 **Ответ: wxyz**
 
-# Задание 10473 (Тип 8)
+# Задание 10473 (Тип 8) Нягу
 <img width="768" height="62" alt="image" src="https://github.com/user-attachments/assets/9f02e3e0-2aa6-4364-9dcc-10354cf2ed90" />
 
 **Решение:**
@@ -538,7 +547,7 @@ print(x)
 
 **Ответ: 270**
 
-# Задание 18578 (Тип 2)
+# Задание 18578 (Тип 2) Шнайдер
 <img width="718" height="201" alt="image" src="https://github.com/user-attachments/assets/449c7aa0-1e1b-457e-9658-67fdba5fe9fb" />
 
 **Решение:**
@@ -575,7 +584,7 @@ print(4**11*c1 + 3*4**10*c2)
 
 **Ответ: 293601280**
 
-# Задание 81786 (Тип 2)
+# Задание 81786 (Тип 2) Гусейнов
 <img width="776" height="221" alt="image" src="https://github.com/user-attachments/assets/3ef8cf5b-4aa7-40f2-8e1c-c5d5651c3ead" />
 
 **Решение:**
