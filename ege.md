@@ -188,6 +188,105 @@ for x in range(0, 2):
 
 **Ответ: wzyx**
 
+# Задание 7667 (Тип 8) Буйняченко
+<img width="770" height="33" alt="image" src="https://github.com/user-attachments/assets/d12d2bdf-7928-40a0-8dfb-73a3a680ed8c" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'ЕГЭ'
+count = 0
+for alph in product(alph, repeat = 5):
+    word = ''.join(alph)
+    if word[0] != 'Г':
+        count += 1
+print(count)
+~~~
+
+**Ответ: 162**
+
+# Задание 15970 (Тип 2) Яковлева
+<img width="750" height="196" alt="image" src="https://github.com/user-attachments/assets/e2a488bc-5d99-46ac-85a5-a42bb43e5b00" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((x and (not y)) or (y == z) or w):
+                    print(x, y, z, w)
+~~~
+**Ответ: yxwz**
+
+# Задание 17328 (Тип 8) Яковлева
+<img width="768" height="34" alt="image" src="https://github.com/user-attachments/assets/c50cd5ac-560a-4312-9ac2-d2531df8049a" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'ГЕРАСИМ'
+count = 0
+for alph in product(alph, repeat=7):
+    word = ''.join(alph)
+    if word.count('Г') <= 1 and word.count('Е') <= 1 and word.count('Е') <= 1 and word.count('Р') <= 1 and word.count('А') <= 1 and word.count('С') <= 1 and word.count('И') <= 1 and word.count('М') <= 1\
+            and word.count('ГГ') <= 0 and word.count('ГР') <= 0 and word.count('ГС') <= 0 and word.count('ГМ') <= 0\
+            and word.count('РГ') <= 0 and word.count('РР') <= 0 and word.count('РС') <= 0 and word.count('РМ') <= 0\
+            and word.count('СГ') <= 0 and word.count('СР') <= 0 and word.count('СС') <= 0 and word.count('СМ') <= 0\
+            and word.count('МГ') <= 0 and word.count('МР') <= 0 and word.count('МС') <= 0 and word.count('ММ') <= 0\
+            and word.count('ЕЕ') <= 0 and word.count('ЕА') <= 0 and word.count('ЕИ') <= 0\
+            and word.count('АЕ') <= 0 and word.count('АА') <= 0 and word.count('АИ') <= 0\
+            and word.count('ИЕ') <= 0 and word.count('ИА') <= 0 and word.count('ИИ') <= 0:
+        print(word)
+        count += 1
+print(count)
+~~~
+
+**Ответ: 144**
+
+# Задание 18614 (Тип 2) Куковский
+<img width="723" height="204" alt="image" src="https://github.com/user-attachments/assets/6aa91004-fb2f-46e8-ae5f-a808e09c617c" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0,2):
+    for y in range(0,2):
+        for z in range(0,2):
+            for w in range(0,2):
+                if not (((w <= (not x)) == (z <= y) and (y or w))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: xwyz**
+
+# Задание 27539 (Тип 8) Куковский 
+<img width="772" height="48" alt="image" src="https://github.com/user-attachments/assets/9533dcf6-97ce-4d14-b07b-bc81284d193b" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'БОРИС'
+count = 0
+for alph in product(alph, repeat=6):
+    word = ''.join(alph)
+    if word.count('Б') == 1 and word.count('Р') == 1 and word.count('С') <= 1:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 1440**
+
+# Задание (Тип) 
+
+**Решение:**
+~~~
+
+~~~
+
+**Ответ: **
+
 # Задание 3570 (Тип 8, нет в заданиях)
 <img width="634" height="138" alt="image" src="https://github.com/user-attachments/assets/b6bb112d-8bda-43fe-b164-df8eb5b06ef3" />
 
