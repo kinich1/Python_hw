@@ -29,7 +29,7 @@ for x in range(0, 2):
 ~~~
 **Ответ: yxwz**
 
-## Задание 3697 (Тип 8) Сафаров
+# Задание 3697 (Тип 8) Сафаров
 <img width="773" height="159" alt="image" src="https://github.com/user-attachments/assets/57661332-8fec-45f2-b578-30989901d54d" />
 
 **Решение:**
@@ -816,7 +816,7 @@ for x in range(0, 2):
 
 **Ответ: wzyx**
 
-## Задание 27009 (Тип 8) Вагин
+# Задание 27009 (Тип 8) Вагин
 <img width="772" height="49" alt="image" src="https://github.com/user-attachments/assets/f4c99b94-bd12-457a-a4cc-f7c86fb03e4e" />
 
 **Решение:**
@@ -833,7 +833,7 @@ print(x)
 
 **Ответ: 1866**
 
-## Задание 40718 (Тип 2) Буйволенко
+# Задание 40718 (Тип 2) Буйволенко
 <img width="774" height="202" alt="image" src="https://github.com/user-attachments/assets/287a26e9-f9b5-4b9f-9387-28441d51aa41" />
 
 **Решение:**
@@ -849,7 +849,7 @@ for x in range(0, 2):
 
 **Ответ: yxwz**
 
-## Задание 15822 (Тип 8) Буйволенко
+# Задание 15822 (Тип 8) Буйволенко
 <img width="770" height="158" alt="image" src="https://github.com/user-attachments/assets/535e8025-5b78-4fcb-8c70-3bf502aaa6fa" />
 
 **Решение:**
@@ -866,7 +866,7 @@ for word in product(word, repeat = 4):
 
 **Ответ: 86**
 
-## Задание 73828 (Тип 2) Несмашный
+# Задание 73828 (Тип 2) Несмашный
 <img width="703" height="192" alt="image" src="https://github.com/user-attachments/assets/53581bf9-cf6d-4a28-a01c-06e0367ca08d" />
 
 **Решение:**
@@ -882,7 +882,7 @@ for x in range(0, 2):
 
 **Ответ: wzxy**
 
-## Задание 28546 (Тип 8) Несмашный
+# Задание 28546 (Тип 8) Несмашный
 <img width="722" height="48" alt="image" src="https://github.com/user-attachments/assets/8daa8323-0d84-44bb-9dc1-26ff212be6d1" />
 
 **Решение:**
@@ -899,7 +899,7 @@ print(count)
 
 **Ответ: 24**
 
-## Задание 45236 (Тип 2) Магомедбегов
+# Задание 45236 (Тип 2) Магомедбегов
 <img width="721" height="222" alt="image" src="https://github.com/user-attachments/assets/47fe36cc-4ad2-4f29-9c5b-1c224e91931c" />
 
 **Решение:**
@@ -915,7 +915,7 @@ for x in range(0, 2):
 
 **Ответ: zxwy**
 
-## Задание 15795 (Тип 8) Магомедбегов
+# Задание 15795 (Тип 8) Магомедбегов
 <img width="719" height="169" alt="image" src="https://github.com/user-attachments/assets/1622b188-7baf-48e2-ba3f-ecf75b1696f1" />
 
 **Решение:**
@@ -934,7 +934,7 @@ for word in product(word, repeat = 4):
 
 **Ответ: 157**
 
-## Задание 33504 (Тип 2) Бубнив
+# Задание 33504 (Тип 2) Бубнив
 <img width="726" height="206" alt="image" src="https://github.com/user-attachments/assets/486ca093-d4c9-4942-b793-d3954e9e6d3c" />
 
 **Решение:**
@@ -950,7 +950,7 @@ for x in range(0, 2):
 
 **Ответ: wzyx**
 
-## Задание 3700 (Тип 8) Бубнив
+# Задание 3700 (Тип 8) Бубнив
 <img width="719" height="157" alt="image" src="https://github.com/user-attachments/assets/61e7762d-ae77-4084-8319-ebfa199ffd2d" />
 
 **Решение:**
@@ -968,7 +968,7 @@ for word in product(word, repeat = 5):
 
 **Ответ: КЦФКК**
 
-## Задание 64932 (Тип 2) Агарков
+# Задание 64932 (Тип 2) Агарков
 <img width="725" height="214" alt="image" src="https://github.com/user-attachments/assets/a2be9690-b4ea-4464-8eb7-cc39b6d5ae47" />
 
 **Решение:**
@@ -984,7 +984,7 @@ for x in range(0, 2):
 
 **Ответ: zyxw**
 
-## Задание 3237 (Тип 8) Агарков
+# Задание 3237 (Тип 8) Агарков
 <img width="699" height="124" alt="image" src="https://github.com/user-attachments/assets/734066aa-6abe-4987-b9e0-23fc8d46b3d6" />
 
 **Решение:**
@@ -1003,7 +1003,7 @@ for words in product(words, repeat=5):
 
 **Ответ: УААУО**
 
-## Задание 64887 (Тип 2) Чесноков
+# Задание 64887 (Тип 2) Чесноков
 <img width="724" height="206" alt="image" src="https://github.com/user-attachments/assets/efd03256-f484-4016-a9b0-8b37c7961668" />
 
 **Решение:**
@@ -1019,7 +1019,7 @@ for x in range(0, 2):
 
 **Ответ: wzyx**
 
-## Задание 13486 (Тип 8) Чесноков
+# Задание 13486 (Тип 8) Чесноков
 <img width="716" height="82" alt="image" src="https://github.com/user-attachments/assets/4dc9f749-deb0-4797-80b6-f95e8914193e" />
 
 **Решение:**
@@ -1036,7 +1036,7 @@ print(count)
 
 **Ответ: 162**
 
-## Задание 72587 (Тип 2) Цыбулин
+# Задание 72587 (Тип 2) Цыбулин
 <img width="721" height="220" alt="image" src="https://github.com/user-attachments/assets/936c7617-a765-4192-984a-7910d859d84b" />
 
 **Решение:**
@@ -1052,7 +1052,7 @@ for x in range(0, 2):
 
 **Ответ: zxwy**
 
-## Задание 59741 (Тип 8) Цыбулин
+# Задание 59741 (Тип 8) Цыбулин
 <img width="775" height="32" alt="image" src="https://github.com/user-attachments/assets/55041707-829e-403c-838e-a320cc81977f" />
 
 **Решение:**
