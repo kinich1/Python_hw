@@ -396,6 +396,57 @@ for x in range(0, 2):
 **Ответ: yxwz**
 
 # Задание 37143 (Тип 8) Сергеев
+<img width="768" height="30" alt="image" src="https://github.com/user-attachments/assets/1e21995e-129f-4d1b-835a-1260c2686b90" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'ГЕПАРД'
+count = 0
+for alph in product(alph, repeat=5):
+    word = ''.join(alph)
+    if word.count('Г') == 1 and word[0] != 'А' and word[4] != 'Е':
+        count += 1
+print(count)
+~~~
+
+**Ответ: 2200**
+
+# Задание 15787 (Тип 2) Исроилов
+<img width="711" height="201" alt="image" src="https://github.com/user-attachments/assets/11c0162c-32eb-487a-ab01-f3ddce2821e5" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not (((x <= y) and (y <= w)) or (z== (x or y))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: ywzx**
+
+# Задание 59745 (Тип 8) Исроилов
+<img width="770" height="179" alt="image" src="https://github.com/user-attachments/assets/d59a0307-42ae-4e41-bbb0-0d9d3dcb2717" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'АГИЛМОРТ'
+count = 0
+num = 0
+for alph in product(alph, repeat=5):
+    num += 1
+    word = ''.join(alph)
+    word2 = str(num) + '. ' + word
+    if num % 2 != 0 and word[0] != 'Г' and word.count('И') >= 2:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 2429**
 
 # Задание 19051 (Тип 2, нет в заданиях)
 <img width="771" height="188" alt="image" src="https://github.com/user-attachments/assets/fcb37398-283e-43c8-9899-05204ae04bb5" />
@@ -530,6 +581,22 @@ for x in range(0, 2):
 
 **Ответ: wxyz**
 
+# Задание 85678 (Тип 2) Нягу
+<img width="770" height="213" alt="image" src="https://github.com/user-attachments/assets/afd5d44f-4919-4e3b-bcf1-5bd0928e15c5" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if not ((not w) or ((z <= x) <= y)):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: yxwz**
+
 # Задание 10473 (Тип 8) Нягу
 <img width="768" height="62" alt="image" src="https://github.com/user-attachments/assets/9f02e3e0-2aa6-4364-9dcc-10354cf2ed90" />
 
@@ -562,6 +629,31 @@ for x in range(0, 2):
 ~~~
 
 **Ответ: zywx**
+
+# Задание 60250 (Тип 8) Шнайдер
+<img width="766" height="32" alt="image" src="https://github.com/user-attachments/assets/11547893-86df-4955-a523-4a50db21d659" />
+
+**Решение:**
+~~~
+from itertools import product
+nums = '01234567'
+count = 0
+for nums in product(nums, repeat=5):
+    code = ''.join(nums)
+    if code.count('0') <= 1  and code[0] != '0' and code.count('1') == 0 and code.count('2') <= 1 and code.count('3') <= 1 and code.count('4') <= 1 and code.count('5') <= 1 and code.count('6') <= 1 and code.count('7') <= 1\
+        and code.count('00') == 0 and code.count('02') == 0 and code.count('04') == 0 and code.count('06') == 0\
+        and code.count('20') == 0 and code.count('22') == 0 and code.count('24') == 0 and code.count('26') == 0\
+        and code.count('40') == 0 and code.count('42') == 0 and code.count('44') == 0 and code.count('46') == 0\
+        and code.count('60') == 0 and code.count('62') == 0 and code.count('64') == 0 and code.count('66') == 0\
+        and code.count('11') == 0 and code.count('13') == 0 and code.count('15') == 0 and code.count('17') == 0\
+        and code.count('31') == 0 and code.count('33') == 0 and code.count('35') == 0 and code.count('37') == 0\
+        and code.count('51') == 0 and code.count('53') == 0 and code.count('55') == 0 and code.count('57') == 0\
+        and code.count('71') == 0 and code.count('73') == 0 and code.count('75') == 0 and code.count('77') == 0:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 180**
 
 # Задание 56508 (Тип 8, нет в заданиях)
 <img width="770" height="34" alt="image" src="https://github.com/user-attachments/assets/6db217ac-e55e-4602-9705-8e9908fe45f4" />
@@ -598,6 +690,65 @@ for x in range(0, 2):
                     print(x, y, z, w)
 ~~~
 **Ответ: zyxw**
+
+# Задание 64938 (Тип 8) Гусейнов
+<img width="765" height="140" alt="image" src="https://github.com/user-attachments/assets/c7b790fe-45f7-44fc-ba72-499128b9ef7f" />
+
+**Решение:**
+~~~
+from itertools import product
+nums = '012345678'
+count = 0
+for nums in product(nums, repeat=11):
+    code = ''.join(nums)
+    first = int(nums[0])
+    second = int(nums[1])
+    third = int(nums[2])
+    fourth = int(nums[3])
+    fifth = int(nums[4])
+    sixth = int(nums[5])
+    seven = int(nums[6])
+    eighth = int(nums[7])
+    if code[0] != '0' and ((first + second + third + fourth + fifth + seven + eighth) % 2 == 0 and second > first)\
+    or ((first + second + third + fourth + fifth + seven + eighth) % 2 != 0 and second < first):
+        count += 1
+print(count)
+~~~
+
+**Ответ: 8388608**
+
+# Задание 17320 (Тип 2) Кривицкий
+<img width="712" height="197" alt="image" src="https://github.com/user-attachments/assets/88c20fa4-411d-47e8-89ff-4d6c7ab0b310" />
+
+**Решение:**
+~~~
+print('x y z w')
+for x in range(0, 2):
+    for y in range(0, 2):
+        for z in range(0, 2):
+            for w in range(0, 2):
+                if (((x and y) or (y and z)) == ((x <= w) and (w <= z))):
+                    print(x, y, z, w)
+~~~
+
+**Ответ: xwzy**
+
+# Задание 9796 (Тип 8) Кривицкий
+<img width="771" height="68" alt="image" src="https://github.com/user-attachments/assets/c9445759-6d88-4124-9d44-ee200ea38076" />
+
+**Решение:**
+~~~
+from itertools import product
+alph = 'АВСХ'
+count = 0
+for alph in product(alph, repeat=5):
+    code = ''.join(alph)
+    if code.count('Х') == 1:
+        count += 1
+print(count)
+~~~
+
+**Ответ: 405**
 
 # Задание 10384 (Тип 8, нет в заданиях)
 <img width="773" height="70" alt="image" src="https://github.com/user-attachments/assets/39e24cc1-78bd-4226-9832-1f43cbc60872" />
